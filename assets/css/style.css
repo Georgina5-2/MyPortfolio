@@ -1,0 +1,10 @@
+.applicant  /*Name of the applicant*/
+{
+    font-style:normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 80px;
+    background-color: cyan;
+    padding :20px;
+    float :left;
+
+}
