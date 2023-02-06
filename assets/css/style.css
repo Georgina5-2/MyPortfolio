@@ -141,19 +141,8 @@
    grid-row:span 2;
    border-color: var(--borderstyle);
 }
-.project-two
-{
-    border-color: var(--borderstyle);
-}
-.project-three
-{
-    border-color: var(--borderstyle);
-}
-.project-four
-{
-    border-color: var(--borderstyle);
-}
-.project-five
+
+.project-two,.project-three,.project-four,.project-five
 {
     border-color: var(--borderstyle);
 }
