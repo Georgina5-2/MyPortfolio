@@ -4,6 +4,8 @@
     --dark:rgb(85, 97, 109);
     --font-fam: Verdana, Geneva, Tahoma, sans-serif;
     --fontsize: 50px;
+
+    
 }
 .section-header
 {
@@ -92,8 +94,57 @@
     border-right: 2px solid var(--dark);
 }
 
-.about-me-content{
+.about-me-content
+{
     flex:4;
-padding-left: 1rem;
-font-size: small;
+    padding-left: 1rem;
+    font-size: small;
+}
+
+.work {
+    display: flex;
+    font-family:var(--font-fam);
+    color: var(--dark);
+    margin-top: 15px;
+}
+
+.work-header {
+    font-size:var(--fontsize);
+    flex:1;
+    text-align: right;
+    font-weight: 800;
+    padding-right: 1rem;
+    border-right: 2px solid var(--dark);
+}
+
+.work-projects {
+    flex:4;
+}
+
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+    grid-template-rows: repeat(4,2fr);
+}
+
+.project-one
+{
+
+}
+.project-two
+{
+    
+}
+.project-three
+{
+    
+}
+.project-four
+{
+    
+}
+.project-five
+{
+    
 }
