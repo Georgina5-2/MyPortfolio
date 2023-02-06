@@ -4,6 +4,9 @@
     --dark:rgb(85, 97, 109);
     --font-fam: Verdana, Geneva, Tahoma, sans-serif;
     --fontsize: 50px;
+    --borderstyle: (2 px solid var(--neon));
+    --gridfontsize: 20px;
+    --gridfontsmall:12px;
 
     
 }
@@ -123,28 +126,49 @@
 
 .grid-wrapper{
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    grid-template-rows: repeat(4,2fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: "header header";
+    
+    
 }
 
 .project-one
 {
-
+   grid-area:header;
+   grid-column: span 2;
+   grid-row:span 2;
+   border-color: var(--borderstyle);
 }
 .project-two
 {
-    
+    border-color: var(--borderstyle);
 }
 .project-three
 {
-    
+    border-color: var(--borderstyle);
 }
 .project-four
 {
-    
+    border-color: var(--borderstyle);
 }
 .project-five
 {
+    border-color: var(--borderstyle);
+}
+
+#text-one, #text-two, #text-three, #text-four, #text-five
+{
+    display: inline-block;
+    font-size: var(--gridfontsize);
+    font-weight: bold;
+    font-family: var(--fontfam);
+    background-color: var(--neon);
     
+}
+
+.minimize
+{
+    font-size: var(--gridfontsmall);
 }
