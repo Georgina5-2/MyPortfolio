@@ -79,6 +79,12 @@
 
 }
 
+.subtitle
+{
+    color: var(--dark);
+    font-weight: bold;
+}
+
 .about-me
 {
     display: flex;
@@ -188,3 +194,31 @@
     font-size: var(--gridfontsmall);
     padding-left:7px;
 }
+
+.contact {
+    display: flex;
+    font-family:var(--font-fam);
+    color: var(--dark);
+    margin-top: 15px;
+}
+
+.contact-header {
+    font-size:var(--fontsize);
+    flex:1;
+    text-align: right;
+    font-weight: 800;
+    padding-right: 1rem;
+    border-right: 2px solid var(--dark);
+}
+
+.contact-details
+{
+    flex:4;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align:center;
+    font-weight: bold;
+}
+
+
