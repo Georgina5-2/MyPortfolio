@@ -4,35 +4,34 @@
     --dark:rgb(85, 97, 109);
     --font-fam: Verdana, Geneva, Tahoma, sans-serif;
     --fontsize: 50px;
-   
     --gridfontsize: 20px;
     --gridfontsmall:12px;
     --gridcolor: var(--dark);
-
-    
 }
-.section-header
+
+body{
+    background-color: rgb(199, 199, 239);
+}
+
+.section-header  /*Header*/
 {
     padding: 20px;
     padding-left:0px;
     background-color: var(--dark);
     font-family:var(--font-fam);
-    width: 100%;
     height:100px;
+    
 }
-
-
 
 .applicant  /*Name of the applicant*/
 {
-    
     font-size: var(--fontsize);
     background-color:var(--neon);
     padding :20px 4px 20px 70px;
     float :left;
     margin-top:3px;
     margin-bottom:0px;
-    color:var(--dark)
+    color:var(--dark);
 
 }
 .section-header ul {
@@ -41,21 +40,21 @@
 }
 
 .section-header ul li {
-    display:inline;
+    display:inline-flex;
+    justify-content: flex-end;
      
 }
 
-.navigation
+.navigation    /*navigation*/
 {
+    flex:4;
+    justify-content: center;
     display:flex;
     float: right;
     font-family: var(--font-fam);
     font-size: 30px;
     color: var(--neon);
-
-    padding-right: 120px;
-    
-    
+    padding-right: 100px;
 }
 
 .navigation li {
@@ -63,12 +62,20 @@
     padding-bottom: 30px;
 }
 
+.navigation li:hover{
+    color: white;
+}
+
+
 .image{
     display:block;
     width: 100%;
     height: 230px;
     background-image: url('../images/watersmall.png');
-    background-size: contain;}
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 .image p {
     background-color: var(--neon);
@@ -76,16 +83,19 @@
     margin-right:60px;
     margin-top: 160px;
     font-size:xx-large;
-
-}
-
-.subtitle
-{
     color: var(--dark);
     font-weight: bold;
+    float:right;
+
 }
 
-.about-me
+.portrait {
+    width: 80px;
+    height: 100px;
+    float: right;
+}
+
+.about-me      /*Description about me*/
 {
     display: flex;
     font-family:var(--font-fam);
@@ -109,9 +119,10 @@
     flex:4;
     padding-left: 1rem;
     font-size: small;
+    
 }
 
-.work {
+.work {                     /*Description about my work*/
     display: flex;
     font-family:var(--font-fam);
     color: var(--dark);
@@ -145,9 +156,7 @@
    grid-area:header;
    grid-column: span 2;
    grid-row:span 2;
-   
-   height: 350px;
-   background-color: var(--gridcolor);
+    height: 350px;
 }
 
 .project-two,.project-three,.project-four,.project-five
@@ -156,10 +165,56 @@
     height:100px;
     background-color: var(--gridcolor);
 }
+
 .project-one,.project-two,.project-three,.project-four,.project-five{
     margin: 4px;
     border: 4px solid var(--neon);
 }
+
+.project-one {
+    
+    display:block;
+    background-image: url("../images/surfreport.png");
+    width:auto;
+    height:auto;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+   
+.project-two {
+    
+    display:block;
+    background-image: url("../images/LEDwall.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project-three {
+    display:block;
+    background-image: url("../images/calculator.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project-four {
+    display:block;
+    background-image: url("../images/Pastelpuzzle.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project-five {
+    display:block;
+    background-image: url("../images/runbuddy.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.project-one:hover,.project-two:hover,.project-three:hover,.project-four:hover,.project-five:hover {
+    opacity: 50%;
+}
+
+
 
 #text-one, #text-two, #text-three, #text-four, #text-five
 {
@@ -220,5 +275,50 @@
     text-align:center;
     font-weight: bold;
 }
+
+.contact-details a:hover{
+    color:darkgreen;
+}
+
+
+@media screen and (max-width:992px){
+
+    .section-header,.navigation, .about-me,.work,.contact,.contact-details{
+        display:block;
+    }
+    .about-me-header,.work-header,.contact-header{
+        text-align: center;
+    }
+     
+        .subtitle p{
+           position: relative;
+        }
+
+
+}
+
+@media screen and (max-width:768px){
+
+    .section-header,.navigation, .about-me,.work,.contact,.contact-details{
+        display:block;
+    }
+
+    .about-me-header,.work-header,.contact-header{
+        text-align: center;
+        border-right:0px;
+    }
+
+    .subtitle p{
+        position: absolute;
+     }
+
+}
+
+
+
+
+    
+
+
 
 
